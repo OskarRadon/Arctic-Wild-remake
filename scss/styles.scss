@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'colors';
+@import 'mixins';
 
 body {
   margin: 0;
@@ -156,7 +157,7 @@ main {
     @media all and (min-width: $first-breakpoint) {
       margin-top: 0;
       width: 100%;
-      height: 325px;
+      height: 425px;
     }
     &.half {
       @media all and (min-width: $first-breakpoint) {
@@ -197,6 +198,10 @@ main {
       position: relative;
       top: -60px;
       left: 20px;
+      @media all and (min-width: $first-breakpoint) {
+        top: -80px;
+        left: 40px;
+      }
       .section-br {
         height: 5px;
         width: 40px;
@@ -209,15 +214,6 @@ main {
         margin-top: 10px;
       }
     }
-  }
-}
-
-// Make sections with images as backgrounds
-@mixin make-article($num) {
-  #s#{$num} {
-    background: url(../img/#{$num}.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
