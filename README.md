@@ -1,6 +1,4 @@
-## Lux
-
-**Arctic Wild Remake**
+## Arctic Wild Remake
 
 By **Oskar Radon**
 
