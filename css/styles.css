@@ -84,7 +84,11 @@ header {
 
 .search-bar-wrapper {
   height: 150px;
-  background: #30302f; }
+  background: #30302f;
+  display: none; }
+  @media all and (min-width: 1400px) {
+    .search-bar-wrapper {
+      display: block; } }
   .search-bar-wrapper .search-bar {
     height: 90px;
     display: flex;
