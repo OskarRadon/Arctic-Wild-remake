@@ -72,7 +72,12 @@ main {
         height: 60px;
         width: 60px;
         border-radius: 50%;
-        background: rgba(100, 100, 97, 0.9); }
+        background: rgba(100, 100, 97, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main section .icon-wrap .icon img {
+          height: 40px; }
     main section .title {
       position: relative;
       top: -60px;

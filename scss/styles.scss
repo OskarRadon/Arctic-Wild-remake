@@ -83,6 +83,12 @@ main {
         width: 60px;
         border-radius: 50%;
         background: rgba(100, 100, 97, .9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 40px;
+        }
       }
     }
     .title {
