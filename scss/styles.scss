@@ -78,7 +78,13 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover .icon {
+        transform: scale(1.5);
+        transition: .3s ease-in;
+      }
       .icon {
+        transform: scale(1);
+        transition: .3s ease-in;
         height: 60px;
         width: 60px;
         border-radius: 50%;
@@ -87,7 +93,7 @@ main {
         justify-content: center;
         align-items: center;
         img {
-          height: 40px;
+          height: 60%;
         }
       }
     }
