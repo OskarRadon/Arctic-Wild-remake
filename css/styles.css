@@ -82,36 +82,39 @@ header {
       background: white;
       margin: 0 auto; }
 
-.search-bar {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.search-bar-wrapper {
+  height: 150px;
   background: #30302f; }
-  .search-bar a {
-    color: #bdbdb7;
-    text-decoration: none;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 1.2em; }
-    .search-bar a#more {
-      color: #dc7725;
-      border-left: 1px solid #bdbdb7;
-      padding-left: 20px; }
-      .search-bar a#more:hover {
-        color: #eaae7d; }
-    .search-bar a:hover {
-      color: white; }
-  .search-bar nav {
-    margin-left: 40px;
-    color: white; }
-    .search-bar nav a {
-      margin-left: 20px; }
-  .search-bar .search-btn {
-    margin-right: 40px;
+  .search-bar-wrapper .search-bar {
+    height: 90px;
     display: flex;
-    align-items: center; }
-    .search-bar .search-btn img {
-      margin-left: 10px; }
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 0 black; }
+    .search-bar-wrapper .search-bar a {
+      color: #bdbdb7;
+      text-decoration: none;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 1.2em; }
+      .search-bar-wrapper .search-bar a#more {
+        color: #dc7725;
+        border-left: 1px solid #bdbdb7;
+        padding-left: 20px; }
+        .search-bar-wrapper .search-bar a#more:hover {
+          color: #eaae7d; }
+      .search-bar-wrapper .search-bar a:hover {
+        color: white; }
+    .search-bar-wrapper .search-bar nav {
+      margin-left: 40px;
+      color: white; }
+      .search-bar-wrapper .search-bar nav a {
+        margin-left: 20px; }
+    .search-bar-wrapper .search-bar .search-btn {
+      margin-right: 40px;
+      display: flex;
+      align-items: center; }
+      .search-bar-wrapper .search-bar .search-btn img {
+        margin-left: 10px; }
 
 main {
   display: flex;
@@ -133,7 +136,8 @@ main {
       main section {
         margin-top: 0;
         width: 100%;
-        height: 425px; } }
+        height: 425px;
+        border-radius: 0; } }
     @media all and (min-width: 1400px) {
       main section {
         width: 50%; } }
