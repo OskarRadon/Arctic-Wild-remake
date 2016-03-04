@@ -1,3 +1,8 @@
+%background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   background: #e6e6e0;
@@ -34,7 +39,7 @@ header {
 }
 
 .hero {
-  background: url(../img/1.jpg);
+  background: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -60,5 +65,29 @@ header {
       margin: 0 auto;
     }
   }
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  section {
+    height: 250px;
+    width: calc(100% - 30px);
+    margin-top: 15px;
+    border-radius: 3px;
+  }
+}
+
+@mixin make-article($num) {
+  #s#{$num} {
+    background: url(../img/#{$num}.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@for $i from 1 through 6 {
+  @include make-article($i);
 }
