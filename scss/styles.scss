@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'colors';
 
 body {
   margin: 0;
@@ -96,7 +97,45 @@ header {
   }
 }
 
-
+.search-bar {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: darken(#646461, 20%);
+  a {
+    color: #bdbdb7;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+    &#more {
+      color: $color-orange;
+      border-left: 1px solid #bdbdb7;
+      padding-left: 20px;
+      &:hover {
+        color: lighten($color-orange, 20%);
+      }
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  nav {
+    margin-left: 40px;
+    color: white;
+    a {
+      margin-left: 20px;
+    }
+  }
+  .search-btn {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 10px;
+    }
+  }
+}
 
 main {
   display: flex;
@@ -161,7 +200,7 @@ main {
       .section-br {
         height: 5px;
         width: 40px;
-        background: #dc7725;
+        background: $color-orange;
       }
       h2 {
         color: white;
