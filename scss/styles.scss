@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  background: #e6e6e0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -22,7 +21,7 @@ header {
   h2 {
     text-transform: uppercase;
     width: 100px;
-    color: white;
+    color: $color-text;
     margin: 0 40px;
     @media all and (min-width: $second-breakpoint) {
       margin-left: 80px;
@@ -39,7 +38,7 @@ header {
       font-size: 1.2em;
       text-transform: uppercase;
       font-family: Verdana, Geneva, sans-serif;
-      color: white;
+      color: $color-text;
       text-decoration: none;
       margin-left: 30px;
     }
@@ -57,7 +56,7 @@ header {
     .bar {
       height: 3px;
       width: 100%;
-      background: white;
+      background: $color-text;
     }
   }
 }
@@ -72,7 +71,7 @@ header {
   }
   .lead {
     text-align: center;
-    color: white;
+    color: $color-text;
     margin-top: 100px;
     @media all and (min-width: $second-breakpoint) {
       margin-top: 25vh;
@@ -92,14 +91,14 @@ header {
     .lead-br {
       height: 5px;
       width: 200px;
-      background: white;
+      background: $color-text;
       margin: 0 auto;
     }
   }
 }
 .search-bar-wrapper {
   height: 130px;
-  background: darken(#646461, 20%);
+  background: darken($color-darkgray, 20%);
   display: none;
   @media all and (min-width: $second-breakpoint) {
     display: block;
@@ -109,27 +108,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 2px darken(#646461, 80%);
+    box-shadow: 0 1px 2px darken($color-darkgray, 80%);
     a {
-      color: #bdbdb7;
+      color: $color-lightgray;
       text-decoration: none;
       font-family: Verdana, Geneva, sans-serif;
       font-size: 1.2em;
       &#more {
         color: $color-orange;
-        border-left: 1px solid #bdbdb7;
+        border-left: 1px solid $color-lightgray;
         padding-left: 20px;
         &:hover {
           color: lighten($color-orange, 20%);
         }
       }
       &:hover {
-        color: white;
+        color: $color-text;
       }
     }
     nav {
       margin-left: 40px;
-      color: white;
+      color: $color-text;
       a {
         margin-left: 20px;
       }
@@ -223,7 +222,7 @@ main {
         background: $color-orange;
       }
       h2 {
-        color: white;
+        color: $color-text;
         font-family: Verdana, Geneva, sans-serif;
         text-transform: uppercase;
         margin-top: 10px;
