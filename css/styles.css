@@ -83,7 +83,7 @@ header {
       margin: 0 auto; }
 
 .search-bar-wrapper {
-  height: 150px;
+  height: 130px;
   background: #30302f;
   display: none; }
   @media all and (min-width: 1400px) {
