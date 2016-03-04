@@ -1,0 +1,8 @@
+// Make sections with images as backgrounds
+@mixin make-article($num) {
+  #s#{$num} {
+    background: url(../img/#{$num}.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
