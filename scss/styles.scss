@@ -14,7 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media all and (min-width: $main-breakpoint) {
+  @media all and (min-width: $second-breakpoint) {
     height: 180px;
   }
   h2 {
@@ -22,14 +22,14 @@ header {
     width: 100px;
     color: white;
     margin: 0 40px;
-    @media all and (min-width: $main-breakpoint) {
+    @media all and (min-width: $second-breakpoint) {
       margin-left: 80px;
       font-size: 2.2rem;
     }
   }
   nav {
     display: none;
-    @media all and (min-width: $main-breakpoint) {
+    @media all and (min-width: $second-breakpoint) {
       display: block;
       margin-right: 80px;
     }
@@ -49,7 +49,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 40px;
-    @media all and (min-width: $main-breakpoint) {
+    @media all and (min-width: $second-breakpoint) {
       display: none;
     }
     .bar {
@@ -65,14 +65,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  @media all and (min-width: $main-breakpoint) {
+  @media all and (min-width: $second-breakpoint) {
     height: 100vh;
   }
   .lead {
     text-align: center;
     color: white;
     margin-top: 100px;
-    @media all and (min-width: $main-breakpoint) {
+    @media all and (min-width: $second-breakpoint) {
       margin-top: 25vh;
       font-size: 1.6rem;
     }
@@ -101,11 +101,28 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  @media all and (min-width: $first-breakpoint) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
   section {
     height: 250px;
     width: calc(100% - 30px);
     margin-top: 15px;
     border-radius: 3px;
+    @media all and (min-width: $first-breakpoint) {
+      margin-top: 0;
+      width: 100%;
+      height: 325px;
+    }
+    &.half {
+      @media all and (min-width: $first-breakpoint) {
+        width: 50%;
+        align-self: flex-start;
+      }
+    }
     .icon-wrap {
       height: 100%;
       width: 100%;
