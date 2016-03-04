@@ -72,15 +72,34 @@ main {
     width: calc(100% - 30px);
     margin-top: 15px;
     border-radius: 3px;
-    .section-br {
-      height: 5px;
+    .icon-wrap {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: rgba(100, 100, 97, .9);
+      }
     }
-    h2 {
-      color: white;
-      font-family: Verdana, Geneva, sans-serif;
-      text-transform: uppercase;
-      margin-left: 15px;
-      margin-top: 200px;
+    .title {
+      position: relative;
+      top: -60px;
+      left: 20px;
+      .section-br {
+        height: 5px;
+        width: 40px;
+        background: #dc7725;
+      }
+      h2 {
+        color: white;
+        font-family: Verdana, Geneva, sans-serif;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
     }
   }
 }
