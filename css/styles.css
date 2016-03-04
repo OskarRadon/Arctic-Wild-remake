@@ -11,7 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  @media all and (min-width: 900px) {
+  @media all and (min-width: 1200px) {
     header {
       height: 180px; } }
   header h2 {
@@ -19,13 +19,13 @@ header {
     width: 100px;
     color: white;
     margin: 0 40px; }
-    @media all and (min-width: 900px) {
+    @media all and (min-width: 1200px) {
       header h2 {
         margin-left: 80px;
-        font-size: 2rem; } }
+        font-size: 2.2rem; } }
   header nav {
     display: none; }
-    @media all and (min-width: 900px) {
+    @media all and (min-width: 1200px) {
       header nav {
         display: block;
         margin-right: 80px; } }
@@ -43,7 +43,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 40px; }
-    @media all and (min-width: 900px) {
+    @media all and (min-width: 1200px) {
       header .menu-icon {
         display: none; } }
     header .menu-icon .bar {
@@ -56,13 +56,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px; }
-  @media all and (min-width: 900px) {
+  @media all and (min-width: 1200px) {
     .hero {
       height: 100vh; } }
   .hero .lead {
     text-align: center;
     color: white;
     margin-top: 100px; }
+    @media all and (min-width: 1200px) {
+      .hero .lead {
+        margin-top: 25vh;
+        font-size: 1.6rem; } }
     .hero .lead h4 {
       font-family: Verdana, Geneva, sans-serif;
       margin: 0;
