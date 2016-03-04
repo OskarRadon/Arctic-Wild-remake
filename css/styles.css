@@ -126,6 +126,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center; }
+        @media all and (min-width: 800px) {
+          main section .icon-wrap .icon {
+            height: 80px;
+            width: 80px; } }
         main section .icon-wrap .icon img {
           height: 60%; }
     main section .title {

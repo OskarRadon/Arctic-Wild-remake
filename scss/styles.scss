@@ -96,6 +96,8 @@ header {
   }
 }
 
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -143,6 +145,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        @media all and (min-width: $first-breakpoint) {
+          height: 80px;
+          width: 80px;
+        }
         img {
           height: 60%;
         }
