@@ -159,10 +159,16 @@ main {
       width: 100%;
       height: 425px;
     }
+    @media all and (min-width: $second-breakpoint) {
+      width: 50%;
+    }
     &.half {
       @media all and (min-width: $first-breakpoint) {
         width: 50%;
         align-self: flex-start;
+      }
+      @media all and (min-width: $second-breakpoint) {
+        width: 25%;
       }
     }
     .icon-wrap {
