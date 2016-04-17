@@ -3,7 +3,7 @@
 By **Oskar Radon**
 
 #### Description
-A site replica of [Arctic Wild](http://arcticwild.com/) using flexbox, Sass, and 3 breakpoints. [Click here](http://oskarradon.github.io/CSS-week4-code-review/) to view a live version of the site.
+A site replica of [Arctic Wild](http://arcticwild.com/) using flexbox, Sass, and 3 breakpoints. [Click here](https://oskarradon.github.io/Arctic-Wild-remake/) to view a live version of the site.
 
 #### Technologies Used
 Sass, CSS, HTML
